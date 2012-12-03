@@ -3,44 +3,31 @@ layout: page
 title: Welcome!
 tagline: The index page
 ---
-{% include JB/setup %}
+<div id="home">
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+  <div id="featured">
+    <h3>Latest</h3>
+    {% for post in site.posts offset: 0 limit: site.theme.homepage_featured %}
+    <article>
+      <h2>{{ post.date | date_to_string }}</h2>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p class="baseline">{{ post.baseline }}</p>
+      <p>{{ post.content | strip_html | truncatewords: site.theme.featured_wordcount }}</p>
+      <p><a href="{{ post.url }}" class="more">Read more »</a></p>
+    </article>
+    {% endfor %}
+  </div>
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+  <div id="posts">
+    <h3>Previous posts</h3>
 
-## Update Author Attributes
+    <dl>
+      {% for post in site.posts offset: site.theme.homepage_featured limit: site.theme.homepage_posts %}
+        <dt>{{ post.date | date_to_string }}</dt>
+        <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
+      {% endfor %}
+    </dl>
+    <p><a href="/archive.html" class="more">View all posts »</a></p>
+  </div>
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
+</div>
