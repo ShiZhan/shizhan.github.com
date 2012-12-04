@@ -4,17 +4,7 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
-markdown: rdiscount
 pygments: true
-
-# Number of featured posts on homepage
-homepage_featured: 1
-
-# Number of posts on homepage (in addition to featured posts)
-homepage_posts: 2
-
-# Number of words to display in post summaries
-featured_wordcount: 20
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
