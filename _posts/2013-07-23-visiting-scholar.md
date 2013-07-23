@@ -9,7 +9,7 @@ tags: []
 
 July 1st, 2013
 
-Visiting Scholar to [University of Nebraska-Lincoln](http://www.unl.edu/)
+Visiting Scholar to [University of Nebraska-Lincoln](http://www.unl.edu/), [ADSL Group](http://adsl.unl.edu/wiki/), which is led by [Professor Hong Jiang](http://cse.unl.edu/~jiang/).
 
 Office: Schorr Center 216, 1101 T Street, Lincoln, NE 68588, USA
 
