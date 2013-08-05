@@ -18,5 +18,5 @@ Office: Schorr Center 216, 1101 T Street, Lincoln, NE 68588, USA
 
 Phone: 402 (hyphen) 617 (hyphen) 9840
 
-E-Mail: g.shizhan.g@gmail.com
+E-Mail: zhan.shi@unl.edu or g.shizhan.g@gmail.com
 
