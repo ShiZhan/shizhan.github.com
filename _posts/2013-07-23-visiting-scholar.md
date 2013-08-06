@@ -14,7 +14,7 @@ led by [Professor Hong Jiang](http://cse.unl.edu/~jiang/).
 
 Thanks to Prof. Jiang, [Dr. Tian](http://cse.unl.edu/~tian/) and others for their warm welcome and help.
 
-Office: Schorr Center 216, 1101 T Street, Lincoln, NE 68588, USA
+Office: 216 Schorr Center, 1101 T Street, Lincoln, NE 68588, USA
 
 Phone: 402 (hyphen) 617 (hyphen) 9840
 
